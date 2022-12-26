@@ -137,8 +137,38 @@
 .wrapper__right {
     width: 524px;
     height: 472px;
+
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
     padding-left: 5px;
+}
+
+.wrapper__right__header {
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 14px;
+    align-items: flex-end; /* 폰트바꾸면서 사생활 보호 뜨는거 아래로 내림 */
+}
+.right__header__title, .right__header__setting {
+    color: #55b2e4;
+    font-size: 9px;
+}
+
+.right__header__title {
+    font-size: 16px; /* 재할당 됨. css는 위에서 아래로 읽어나가므로 재할당됨 */
+}
+.wrapper__right__body {
+    width: 510px;
+    height: 445px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 15px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* iframe태그에서 기본으로 만드는 border끄기 */
 }
