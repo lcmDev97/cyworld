@@ -18,60 +18,127 @@
     flex-direction: row;
     padding: 32px 0px 0px 32px;
 }
+
+/* 왼쪽 영역 */
 .wrapper__left {
-    width: 200px;
+    width: 208px;
     height: 472px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3px;
+    margin-right: 7px;
 }
-.wrapper__left__header {
-    width: 100%;
-    height: 30px;
 
+/* 왼쪽 영역 - 헤더(투데이 카운터) */
+.wrapper__left__header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-.wrapper__left__body {
     width: 100%;
-    height: 100%;  /* 472px - 30px 해서 442px가 됨 */
+    height: 30px;
+}
+
+.today {
+    padding-top: 10px;
+    font-size: 9px;
+}
+
+.zero {
+    color: red;
+    font-size: 11px;
+}
+
+.count {
+    font-size: 11px;
+}
+
+/* 왼쪽 영역 - 바디(프로필) */
+.wrapper__left__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 0px 30px;
     border: 1px solid gray;
     border-radius: 15px;
     background-color: white;
-
-    display: flex;
-    flex-direction: column;  /* column이기에 */
-    align-items: center; /* 가로를 맞추려면 align-items만 사용하기 */
-
-    padding: 20px 30px;   /* 여기서 padding으로 정렬해주면 자식들 일일히 padding값 안줘도됨 */
 }
+
 .left__body__header {
     width: 100%;
-
     display: flex;
     flex-direction: column;
 }
+
 .left__body__header__gray {
-    width: 140px;
+    width: 148px;
     height: 133px;
-    background-color: grey;
+    background-color: gray;
 }
+
 .left__body__header__line {
-    border-top: 1px dotted black; /* 수평선을 만드는건 hr태그로 만들수 있지만, hr태그를 사용하면 속성변경하기 어렵기 때문에, div태그 만든다음 테두리하나만 나타나게 하는편 추천*/
+    border-top: 1px dotted black;
     margin: 12px 0px;
 }
+
 .left__body__profile {
-
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
+.profile__detail {
+    color: #999999;
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.fas {
+    color: black;
+    margin-right: 10px;
+    width: 5px;
+    height: 5px;
+}
+
 .left__body__footer {
-
+    width: 100%;
+    margin-bottom: 30px;
 }
+
+.wrapper__feel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.feel__title {
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+.feel__select {
+    height: 18px;
+    width: 100%;
+
+    font-size: 11px;
+    color: grey;
+}
+/* 오른쪽 영역 */
 .wrapper__right {
     width: 524px;
     height: 472px;
-    background-color: blue;
-}
-.today {
-    font-size: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding-left: 5px;
 }
