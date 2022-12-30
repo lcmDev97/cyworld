@@ -77,7 +77,10 @@
 .left__body__header__gray {
     width: 148px;
     height: 133px;
-    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: gray; */
 }
 
 .left__body__header__line {
@@ -99,6 +102,18 @@
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
+}
+
+.profile__intro {
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid black; */
+
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* align-items: flex-start; */
 }
 
 .fas {
@@ -132,6 +147,8 @@
 
     font-size: 11px;
     color: grey;
+    
+    border-radius: 5px;
 }
 
 .wrapper__right {
