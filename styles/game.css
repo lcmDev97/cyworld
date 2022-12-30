@@ -63,7 +63,7 @@ html, body {
 
 .game__title {
     font-size: 15px;
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 .game__subtitle {
     font-size: 11px;

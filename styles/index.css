@@ -172,3 +172,30 @@ iframe {
     height: 100%;
     border: none; /* iframe태그에서 기본으로 만드는 border끄기 */
 }
+
+.navigation {
+    width: 62px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 784px;
+    top: 110px;
+}
+
+.navigation__item {
+    width: 60px;
+    height: 30px;
+    background-color: #298eb5;
+    border: 1px solid black;
+
+    color: white;
+    /* border-radius는 왼쪽상단부터 시계방향으로 */
+    border-radius: 0px 10px 10px 0px; 
+    font-size: 10px;
+    text-align: center;
+    line-height: 25px;
+
+    cursor: pointer;
+}
